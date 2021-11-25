@@ -1,0 +1,43 @@
+:root {
+    --primary-color: pink;
+    --secondary-color: #777777;
+    --tertiary-color: rgb(1, 96, 119);
+}
+
+header{
+    padding: 5px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+header h1{
+    color: var(--primary-color);
+    margin:3px;
+    font-size: 4vw;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+}
+header span{
+    font-size: 2vw;
+    color: lightcoral;
+}
+header nav {
+    margin: auto;
+    text-decoration: none;
+}
+header nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+}
+header nav ul li a {
+    color:var(--primary-color);
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+}
