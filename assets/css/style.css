@@ -62,8 +62,11 @@ header nav ul li a {
     border-bottom: 3px solid var(--primary-color);
     margin: 15px 15px;
     background-color: var(--secondary-color)
-    
-   
+}
+
+header nav ul li a:hover {
+    color:var(--tertiary-color);
+    border-color:var(--tertiary-color)
 }
  
 /* hero style */
@@ -92,6 +95,7 @@ header nav ul li a {
     gap: 1em;
     grid-template-columns: 20% 75%;
     margin: 10px;
+    border: 20px;
 }
 
 .work-cards {
@@ -116,12 +120,10 @@ header nav ul li a {
     font-size: 20px;
     color: var(--tertiary-color);
     padding: 5px;
-    margin:5px 0;
-
-    
+    margin:5px 0;   
 }
 /* Work Card Styles */
-.work-cards article{
+.work-cards a{
     border: 3px solid black; 
     border-radius: 10px;
     background-size: cover;
@@ -129,7 +131,20 @@ header nav ul li a {
     height: 200px;
     position: relative;
 }
-.work-cards article h3 {
+.work-cards a{
+    border: 3px solid black; 
+    border-radius: 10px;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+    position: relative;
+}
+.work-cards a:hover{
+    border: 5px solid rgb(141, 0, 0); 
+    border-radius: 10px;
+}
+
+.work-cards a h3 {
     position: absolute;
     display: block;
     font-size: 16px;
@@ -159,7 +174,7 @@ header nav ul li a {
     height: 400px;
 }
 #project-2 {
-    background-image: url(../images/Project-2.jpeg);
+    background-image: url(../images/Project-2-Horiseon.png);
 }
 #project-3 {
     background-image: url(../images/Project-3.jpeg);
@@ -194,7 +209,10 @@ header nav ul li a {
     padding:5px;
     border: 3px solid black ;
     border-radius: 5px;
-   
+}
+.contact-info a:hover {
+    background-color:#070707;
+    color: var(--primary-color);
 }
 
 footer {
@@ -212,4 +230,17 @@ footer {
 }
 
 
-
+@media screen and (max-width:650px) {
+    .main-grid { 
+        display: block;}
+    .section-title {
+        display: block;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 5px;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+}
