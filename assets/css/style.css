@@ -1,3 +1,8 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 :root {
     --primary-color: pink;
     --secondary-color: #777777;
@@ -5,39 +10,107 @@
 }
 
 header{
-    padding: 5px;
+    padding: 30px;
+    padding-left: 0;
     background-color: var(--secondary-color);
     display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    z-index: 9999;
+    justify-content: space-between;
+    border-bottom: 7px solid black;
+    border-right: 7px solid black;
+    margin:0px;
+    
 }
 header h1{
-    color: var(--primary-color);
-    margin:3px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-left:80px;
+    padding-right: 20px;
+    margin:0px;
     font-size: 4vw;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+    display: flex;
 }
-header span{
-    font-size: 2vw;
-    color: lightcoral;
-}
+
 header nav {
-    margin: auto;
+    display: flex;
+    align-items: flex-end;
     text-decoration: none;
+    margin:0px;
 }
 header nav ul {
     display:flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:center;
     list-style: none;
+    margin:0px;
 }
+
+
 header nav ul li a {
     color:var(--primary-color);
-    padding: 20px;
+    padding: 2px ;
     font-weight: lighter;
     font-size: 2vw;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.55);
     text-decoration: none;
+    margin:0px;
+    border-bottom: 3px solid var(--primary-color);
+    margin: 15px 15px;
+    
+   
+}
+    
+.hero {
+    background-image: url(../images/herobg.JPG);
+    background-size: cover;
+    min-height: 300px;
+}
+
+
+.hero h2{
+    font-size: 40px;
+    color: var(--primary-color);
+    padding: 0px 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: rgb(49, 52, 61);
+    margin-top: 220px;
+    font-weight: bold;
+}
+.main-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 25% 75%;
+}
+
+.work-cards {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+#about-me {
+    display: flex;
+    border-right: black solid 2px;
+}
+
+#previous-work {
+    display:flex;
+    border-right: black solid 2px;
+}
+
+#contact-me {
+    grid-column-start: 1;
+    border-right: black solid 2px;
 }

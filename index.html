@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 <meta charset="UTF-8!" />
-<meta name="viewport" content="width=device-width, intial-scale=1.0" >
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
 <title>Zachary Svoboda Portfolio</title>
 <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -10,7 +10,7 @@
 <body>
     <!--Header Begins-->
     <Header>
-        <h1>Zachary Svoboda <span>Zsvoboda87</span></h1>
+        <h1>Zachary Svoboda</h1>
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
@@ -25,14 +25,18 @@
     <section class="hero">
         <h2>Former Roadie Goes Developer</h2>
     </section>
-    <section class="work-cards">
-        <div id="about-me">
-          <h2 class="section-title">About Me</h2>
-          <p>This is a placeholder for my about me text</p>
-        </div>
-        <div id="previous-work">
-            <h2 class="section-title">Previous Work</h2>
-            <article>
+    <!--About Me section-->
+
+    <main class="main-grid">
+
+        <h2 id="about-me" class="section-title">About Me</h2>
+        <div class="about-me-text">This is a placeholder for my about me text</div>
+
+
+
+        <h2 id="previous-work" class="section-title">Previous Work</h2>
+        <div class="work-cards">
+            <article class="grid-col-span-2">
                 <h3>Surf Report</h3>
                 <h4>MERN Stack</h4>
             </article>
@@ -53,17 +57,13 @@
                 <h4>HTML/CSS</h4>
             </article>
         </div>
-        <div>
-            <h2 id="contact-me" class="section-title">Contact Me</h2>
+        <h2 id="contact-me" class="section-title">Contact Me</h2>
+        <div class="contact-info">
             <p>555.555.5555</p>
             <a href="mailto:zachary.svoboda@yahoo.com">zachary.svoboda@yahoo.com</a>
             <a href="#">Github</a>
             <a href="#">Twitter</a>
             <a href="#">Spotify</a>
         </div>
-    </section>
-
-
-
-
+    </main>
 </body>
