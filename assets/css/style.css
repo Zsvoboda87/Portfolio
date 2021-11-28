@@ -6,9 +6,12 @@
 :root {
     --primary-color: pink;
     --secondary-color: #777777;
-    --tertiary-color: rgb(1, 96, 119);
+    --tertiary-color: rgb(49, 52, 61);
 }
 
+body {
+    background-color: #b1b1b1;
+}
 /* Webpage Header Styles*/
 header{
     padding: 30px;
@@ -22,7 +25,7 @@ header{
     
 }
 header h1{
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     background-color: var(--primary-color);
     padding-left:80px;
     padding-right: 20px;
@@ -36,6 +39,7 @@ header nav {
     align-items: flex-end;
     text-decoration: none;
     margin:0px;
+    background-color: var(--secondary-color)
 }
 header nav ul {
     display:flex;
@@ -43,6 +47,7 @@ header nav ul {
     flex-wrap: wrap;
     list-style: none;
     margin:0px;
+    background-color: var(--secondary-color)
 }
 
 
@@ -56,6 +61,7 @@ header nav ul li a {
     margin:0px;
     border-bottom: 3px solid var(--primary-color);
     margin: 15px 15px;
+    background-color: var(--secondary-color)
     
    
 }
@@ -64,28 +70,28 @@ header nav ul li a {
 .hero {
     background-image: url(../images/herobg.JPG);
     background-size: cover;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 
 .hero h2{
     font-size: 40px;
-    color: var(--primary-color);
     padding: 0px 40px;
     display: inline-block;
     float: right;
     text-align: center;
     background-color: var(--primary-color);
     color: rgb(49, 52, 61);
-    margin-top: 220px;
+    margin-top: 150px;
     font-weight: bold;
 }
 
 /* main-grid structure */
 .main-grid {
     display: grid;
-    gap: .5em;
-    grid-template-columns: 25% 75%;
+    gap: 1em;
+    grid-template-columns: 20% 75%;
+    margin: 10px;
 }
 
 .work-cards {
@@ -99,15 +105,19 @@ header nav ul li a {
     display: flex;
     justify-content: right;
     border-right: black solid 4px;
-    color:var(--secondary-color);
+    color:var(--tertiary-color);
     text-shadow: rgba(0, 0, 0, 0.55);
-    padding: 10px;
-    font-size: 24px;
+    padding: 15px;
+    font-size: 30px;
+    text-align: right;
 }
 /* About Me Paragraph Style */
 .about-me-text {
     font-size: 20px;
-    color: var(--tertiary-color)
+    color: var(--tertiary-color);
+    padding: 5px;
+    margin:5px 0;
+
     
 }
 /* Work Card Styles */
@@ -116,7 +126,7 @@ header nav ul li a {
     border-radius: 10px;
     background-size: cover;
     display: inline-block;
-    height: 150px;
+    height: 200px;
     position: relative;
 }
 .work-cards article h3 {
@@ -127,13 +137,26 @@ header nav ul li a {
     background-color:var(--secondary-color);
     color: var(--primary-color);
     width: fit-content;
-    top: 90px;
+    top: 150px;
+    padding:3px;
+    padding-left: 30px;
+}
+#project-1-h3 {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    font-style:lighter;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    width: fit-content;
+    top: 350px;
     padding:3px;
     padding-left: 30px;
 }
 
 #project-1 {
-    background-image: url(../images/Project-1.jpeg);
+    background-image: url(../images/Project-1-runbuddy.png);
+    height: 400px;
 }
 #project-2 {
     background-image: url(../images/Project-2.jpeg);
@@ -158,18 +181,27 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     background-color: var(--secondary-color);
+    border: 3px solid black ;
     border-radius: 5px;
 }
 .contact-info a {
     text-decoration:none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding:10px 0;
+    background-color:#b1b1b1;
+    color: var(--tertiary-color);
+    font-size: 20px;
+    padding:5px;
+    border: 3px solid black ;
+    border-radius: 5px;
+   
 }
 
-
-
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
 /* Ulitily classes */
 .grid-col-span-2 {
     grid-column: span 2;
