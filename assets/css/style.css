@@ -224,6 +224,20 @@ footer {
     font-size: 18px;
 }
 
+footer a {
+    text-decoration: none;
+    font-style: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    padding: 3px;
+}
+
+footer a:hover {
+    background-color:#070707;
+    color: var(--primary-color);
+}
+
 /* Utility classes */
 .grid-col-span-2 {
     grid-column: span 2;
