@@ -22,8 +22,8 @@ header{
     border-bottom: 7px solid black;
     border-right: 7px solid black;
     margin:0px;
-    
 }
+
 header h1{
     color: var(--tertiary-color);
     background-color: var(--primary-color);
@@ -41,6 +41,7 @@ header nav {
     margin:0px;
     background-color: var(--secondary-color)
 }
+
 header nav ul {
     display:flex;
     justify-content: space-evenly;
@@ -49,7 +50,6 @@ header nav ul {
     margin:0px;
     background-color: var(--secondary-color)
 }
-
 
 header nav ul li a {
     color:var(--primary-color);
@@ -75,7 +75,6 @@ header nav ul li a:hover {
     background-size: cover;
     min-height: 200px;
 }
-
 
 .hero h2{
     font-size: 40px;
@@ -139,6 +138,7 @@ header nav ul li a:hover {
     height: 200px;
     position: relative;
 }
+
 .work-cards a:hover{
     border: 5px solid rgb(141, 0, 0); 
     border-radius: 10px;
@@ -156,6 +156,7 @@ header nav ul li a:hover {
     padding:3px;
     padding-left: 30px;
 }
+
 #project-1-h3 {
     position: absolute;
     display: block;
@@ -186,7 +187,7 @@ header nav ul li a:hover {
     background-image: url(../images/Project-5.jpeg);
 }
 
-.work-cards article h3 span {
+.work-cards a h3 span {
     font-style: italic;
     padding-left:5px;
 }
@@ -201,6 +202,7 @@ header nav ul li a:hover {
     border: 3px solid black ;
     border-radius: 5px;
 }
+
 .contact-info a {
     text-decoration:none;
     background-color:#b1b1b1;
@@ -210,6 +212,7 @@ header nav ul li a:hover {
     border: 3px solid black ;
     border-radius: 5px;
 }
+
 .contact-info a:hover {
     background-color:#070707;
     color: var(--primary-color);
@@ -220,7 +223,8 @@ footer {
     padding: 20px;
     font-size: 18px;
 }
-/* Ulitily classes */
+
+/* Utility classes */
 .grid-col-span-2 {
     grid-column: span 2;
 }
@@ -229,7 +233,16 @@ footer {
     grid-row: span 2;
 }
 
+/* For Tablets and large phones */
+@media screen and (max-width:810px) {
+header nav ul li {
+    padding: 10px
+}
+}
 
+
+
+/* For smaller screen sizes (smart phones) */
 @media screen and (max-width:650px) {
     .main-grid { 
         display: block;}
