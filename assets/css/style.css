@@ -271,3 +271,31 @@ header nav ul li {
         font-size: 18px;
     }
 }
+
+/* For smaller screen 450px sizes ) */
+@media screen and (max-width:450px) {
+    header {
+        display: block;
+        margin:0;
+        padding: 0;
+        border: none;
+    }
+    header nav ul li {
+        display: block;
+        width:100px;
+        
+    }
+
+    header h1{
+        padding-left:20px;
+        padding-right: 20px;
+        margin:0px;
+        font-size: 3vw;
+        display: block;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 12px;
+        padding: none;
+    }
+}
