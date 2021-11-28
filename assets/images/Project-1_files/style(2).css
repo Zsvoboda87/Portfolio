@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/*	version: "v4.3"	*/
+/* CSS Document */
+
+:root {
+	--full-width: 728px;
+	--full-height: 90px;
+	--red: #ec0c21;
+	--khaki: #f2ddbb;
+	--white: #f7f0e4;
+}
+
+.copy-bold {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 23px;
+	color: #fff;
+	
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-ms-text-size-adjust: 100%;
+    letter-spacing: 0.5px;
+}
+
+.copy-reg {
+	color: #fff;
+	font-size: 23px;
+	line-height: 24px;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* End Font Styles */
+
+
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+body {
+	display: none;
+}
+
+#unit-container {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#main-panel {
+	/*background: url("../../SF_DigitalDisplayTemplates_Red_728x90.png") top left no-repeat;*/
+	background-color: var(--red);
+}
+
+.panel {
+	overflow: hidden;
+}
+
+img, svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.full-col { width: var(--full-width); height: var(--full-height); }
+
+.full-exp {
+	
+}
+
+.free {
+	position: absolute;
+}
+
+.centered {
+	text-align: center;
+}
+
+.no-point {
+	pointer-events: none !important;
+}
+
+
+
+
+#intro {
+    z-index: 2;
+    left: 110px;
+    width: 800px;
+}
+
+.intro {
+	left: 0;
+	top: 0;
+    transform-origin: 50% 50%;
+	transform: translateX(-28px);
+    opacity: 0;
+}
+
+#intro2 {
+	top: -13px;
+}
+
+.intro span {
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+}
+sup {
+    position: absolute;
+    font: normal 16px/28px 'Mecherle-Legal';
+    top: -5px;
+}
+.intro sup {
+    font-size: 0.55em;
+    line-height: 1.2em;
+    top: 0;
+    right: -6px;
+}
+
+.intro .tm {
+    right: -10px;
+}
+
+#portal {
+    width: 197px;
+    height: 140px;
+    margin-left: 574px;
+    margin-top: 5px;
+    overflow: hidden;
+    transform-origin: 0% 0%;
+    transform: translateY(300px);
+    display: inline-block;
+    z-index: 2;
+}
+
+#orb {
+    width: 198px;
+    height: 135px;
+    left: 0;
+    bottom: 0;
+}
+
+#ls {
+    width: 130px;
+    height: 80px;
+    background: url(../images/img.png) top left no-repeat;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 22px;
+}
+
+#cta svg {
+    overflow: visible;
+}
+
+#cta, #cta_red, #cta_white {
+    width: 95px;
+    height: 35px;
+}
+
+#cta {
+    left: 391px;
+    opacity: 0;
+}
+
+#cta_red {
+	z-index: 2;
+	opacity: 0;
+}
+
+p {
+	margin: 0;
+}
+
+#legal, #legal2 {
+    font: normal 8px/9px 'Mecherle-Legal';
+    transform-origin: 100% 0%;
+    bottom: 10px;
+    left: 115px;
+    opacity: 0;
+    color: #fff;
+}
+
+#legal sup, #legal2 sup {
+	position: absolute;
+    font: normal 5px/15px 'Mecherle-Legal';
+    top: -4px;
+    left: -3px;
+}
+
+#logo {
+    top: 37px;
+    left: 37px;
+    transform-origin: top left;
+    transform: scale(0.26);
+}
+
+#logo-container,
+#ellipses {
+	left: 0px;
+	top: 0px;
+}
+
+.logo-part {
+    overflow: hidden;
+}
+
+.logo-part svg {
+    position: absolute;
+    width: 680px;
+}
+
+#logo-orbs,
+#ellipses {
+	width: 145px;
+	height: 95px;
+}
+
+#logo-orbs {
+    opacity: 0;
+}
+
+#orbs-reg {
+	font-size: 16px;
+    color: #fff;
+    left: 146px;
+    font-weight: 500;
+    top: 75px;
+	opacity: 0;
+}
+
+#logo-name {
+	width: 514px;
+    height: 95px;
+    left: -55px;
+    top: -55px;
+	
+    transform-origin: top left;
+    -moztransform: translate(-40px) scale(0.48);
+    -webkit-transform: translate(-40px) scale(0.48);
+    transform: translate(-40px) scale(0.48);
+    opacity: 0;
+}
+
+#logo-name svg {
+	left: -145px;
+}
+
+.ellipse {
+    width: 145px;
+    height: 109px;
+    
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    
+    -moztransform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}

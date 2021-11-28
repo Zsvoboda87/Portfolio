@@ -9,6 +9,7 @@
     --tertiary-color: rgb(1, 96, 119);
 }
 
+/* Webpage Header Styles*/
 header{
     padding: 30px;
     padding-left: 0;
@@ -58,7 +59,8 @@ header nav ul li a {
     
    
 }
-    
+ 
+/* hero style */
 .hero {
     background-image: url(../images/herobg.JPG);
     background-size: cover;
@@ -78,20 +80,97 @@ header nav ul li a {
     margin-top: 220px;
     font-weight: bold;
 }
+
+/* main-grid structure */
 .main-grid {
     display: grid;
-    gap: 1.5em;
+    gap: .5em;
     grid-template-columns: 25% 75%;
 }
 
 .work-cards {
     display: grid;
-    gap: 1.5em;
+    gap: .5em;
     grid-template-columns: 50% 50%;
+}
+
+/* grid h2 headers style */
+.section-title {
+    display: flex;
+    justify-content: right;
+    border-right: black solid 4px;
+    color:var(--secondary-color);
+    text-shadow: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    font-size: 24px;
+}
+/* About Me Paragraph Style */
+.about-me-text {
+    font-size: 20px;
+    color: var(--tertiary-color)
+    
+}
+/* Work Card Styles */
+.work-cards article{
+    border: 3px solid black; 
+    border-radius: 10px;
+    background-size: cover;
+    display: inline-block;
+    height: 150px;
+    position: relative;
+}
+.work-cards article h3 {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    font-style:lighter;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    width: fit-content;
+    top: 90px;
+    padding:3px;
+    padding-left: 30px;
+}
+
+#project-1 {
+    background-image: url(../images/Project-1.jpeg);
+}
+#project-2 {
+    background-image: url(../images/Project-2.jpeg);
+}
+#project-3 {
+    background-image: url(../images/Project-3.jpeg);
+}
+#project-4 {
+    background-image: url(../images/Project-4.jpeg);
+}
+#project-5 {
+    background-image: url(../images/Project-5.jpeg);
+}
+
+.work-cards article h3 span {
+    font-style: italic;
+    padding-left:5px;
+}
+
+/* Contact info Style */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+.contact-info a {
+    text-decoration:none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding:10px 0;
 }
 
 
 
+/* Ulitily classes */
 .grid-col-span-2 {
     grid-column: span 2;
 }
@@ -100,17 +179,5 @@ header nav ul li a {
     grid-row: span 2;
 }
 
-#about-me {
-    display: flex;
-    border-right: black solid 2px;
-}
 
-#previous-work {
-    display:flex;
-    border-right: black solid 2px;
-}
 
-#contact-me {
-    grid-column-start: 1;
-    border-right: black solid 2px;
-}
