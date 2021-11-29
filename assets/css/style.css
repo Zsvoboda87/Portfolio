@@ -1,8 +1,10 @@
+/* universal style */
 * {
     margin:0;
     padding:0;
 }
 
+/* design colors */
 :root {
     --primary-color: pink;
     --secondary-color: #777777;
@@ -218,6 +220,7 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
+/* footer styling */
 footer {
     text-align: center;
     padding: 20px;
@@ -247,7 +250,7 @@ footer a:hover {
     grid-row: span 2;
 }
 
-/* For Tablets and large phones */
+/* For Tablets and large phones (810px and under) */
 @media screen and (max-width:810px) {
 header nav ul li {
     padding: 10px
@@ -256,7 +259,7 @@ header nav ul li {
 
 
 
-/* For smaller screen sizes (smart phones) */
+/* For screen sizes 650px wide and under) */
 @media screen and (max-width:650px) {
     .main-grid { 
         display: block;}
@@ -272,7 +275,7 @@ header nav ul li {
     }
 }
 
-/* For smaller screen 450px sizes ) */
+/* For screen size 450px wide and under ) */
 @media screen and (max-width:450px) {
     header {
         display: block;
