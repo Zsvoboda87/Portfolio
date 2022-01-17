@@ -188,14 +188,14 @@ header nav ul li a:hover {
 }
 
 #project-1 {
-    background-image: url(../images/Project-1-runbuddy.png);
+    background-image: url(../images/Bored-AF.png);
     height: 400px;
 }
 #project-2 {
-    background-image: url(../images/Project-2-Horiseon.png);
+    background-image:  url(../images/Project-1-runbuddy.png);
 }
 #project-3 {
-    background-image: url(../images/Bored-AF.png);
+    background-image: url(../images/Project-2-Horiseon.png);
 }
 #project-4 {
     background-image: url(../images/Project-4.jpeg);
